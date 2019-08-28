@@ -56,6 +56,10 @@ public class BasketballPlayer extends Player implements Serializable, Actions {
 		
 	}
 
+	public void dismantle() {
+		System.out.println(this.getName() + " is dismantling a franchise!!");		
+	}
+	
 	public void shoot() {
 		System.out.println(this.getName() + " is shooting the ball!");		
 	}

@@ -9,6 +9,7 @@ public class Roster {
 
 	public static void main(String[] args) {
 		myRoster();
+		
 	}
 
 	private static void myRoster() {
@@ -24,6 +25,16 @@ public class Roster {
 		while (rosterQueue.size() > 0) {
 			System.out.println("Queue size: " + rosterQueue.size());
 			System.out.println("Next player: ID# " + rosterQueue.peek().playerId + " " + rosterQueue.poll());
+			
+		}
+		
+		
+		for (BasketballPlayer player: roster) {
+			if (player.getName().equals("Damian Lillard")) {
+				player.dismantle();
+			} else {
+				player.shoot();
+			}
 		}
 		
 	}
