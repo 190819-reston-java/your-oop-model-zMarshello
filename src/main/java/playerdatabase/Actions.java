@@ -6,4 +6,6 @@ public interface Actions {
 	
 	public void shoot();
 	
+	public void dismantle();
+	
 }
